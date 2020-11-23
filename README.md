@@ -54,4 +54,30 @@ Project Organization
 
 --------
 
+Article Reliability and Bias Scores
+------------
+
+The article reliability and bias scores used to classify articles when training the model, as well as the articles themselves, are from an interactive media bias chart found [here](https://ichart.vercel.app/) (or [here](https://www.adfontesmedia.com/interactive-media-bias-chart-2/) if the first link does not work for some reason). These two classifiers, or labels, are measured on the following scales:
+
+##### Reliability
+- 0.0 to 8.0 - Contains Inaccurate / Fabricated Information
+- 8.0 to 16.0 - Propaganda / Contains Misleading Information
+- 16.0 to 24.0 - Selective or Incomplete Story / Unfair Persuasion
+- 24.0 to 32.0 - Opinion or High Variation in Reliability
+- 32.0 to 40.0 - Analysis or High Variation in Reliability
+- 40.0 to 48.0 - Complex Analysis or Mix of Fact Reporting and Analysis
+- 48.0 to 56.0 - Fact Reporting
+- 56.0 to 64.0 - Original Fact Reporting
+
+##### Bias
+- -42.0 to -30.0 - Most Extreme Left
+- -30.0 to -18.0 - Hyper-Partisan Left
+- -18.0 to -6.0 - Skews Left
+- -6.0 to 6.0 - Neutral or Balanced Bias
+- 6.0 to 18.0 - Skews Right
+- 18.0 to 30.0 - Hyper-Partisan Right
+- 30.0 to 42.0 - Most Extreme Right
+
+--------
+
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
